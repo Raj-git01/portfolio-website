@@ -24,5 +24,5 @@ portfolio-website/
 - Clone this repo
 - Open index.html in your browser
 ## 👨‍💻 Author
-K Raj Bharath
-B.Tech CSE First Year Student
+**K Raj Bharath**  
+B.Tech CSE | First-Year Student
