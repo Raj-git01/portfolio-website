@@ -1,196 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-  <title>K Raj Bharath | Portfolio</title>
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f8fafc;
-      color: #24457b;
-      line-height: 1.6;
-    }
-    .header-bar {
-      background: #388be8;
-      height: 10px;
-      width: 100vw;
-    }
-    .container {
-      max-width: 850px;
-      margin: 3rem auto;
-      background: #fff;
-      padding: 2.5rem 3rem;
-      border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(56,139,232, 0.15);
-    }
-    header {
-      text-align: center;
-      margin: 44px 0 38px 0;
-    }
-    header h1 {
-      font-size: 2.1rem;
-      color: #388be8;
-      font-weight: 700;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
-    }
-    header div {
-      font-size: 1.08rem;
-      color: #4883b5;
-      font-weight: 500;
-      margin-bottom: 0;
-    }
-    nav {
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      box-shadow: 0 2px 6px rgba(36, 69, 123, 0.07);
-      padding: 30px 0 0 0;
-      margin-bottom: 35px;
-      font-size: 1.45rem;
-      font-weight: 700;
-    }
-    nav a {
-      color: #388be8;
-      text-decoration: none;
-      margin: 0 40px;
-      padding-bottom: 8px;
-      position: relative;
-      display: inline-block;
-      transition: color 0.3s;
-    }
-    nav a.active, nav a:hover {
-      color: #1560b0;
-    }
-    nav a.active::after, nav a:hover::after {
-      content: "";
-      display: block;
-      margin: 0 auto;
-      width: 100px;
-      border-bottom: 4px solid #388be8;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: -2px;
-    }
-    section {
-      margin-bottom: 2.5rem;
-    }
-    section h2 {
-      font-size: 1.5rem;
-      border-bottom: 2px solid #388be8;
-      padding-bottom: 5px;
-      color: #1560b0;
-      margin-bottom: 20px;
-      font-weight: 700;
-    }
-    ul.skills, ul.projects {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    ul.skills li, ul.projects li {
-      background: #e3f0fc;
-      border: 1px solid #388be8;
-      border-radius: 6px;
-      padding: 0.5rem 1rem;
-      margin: 0.5rem 1rem 0.5rem 0;
-      font-weight: 600;
-      color: #1560b0;
-      box-shadow: 0 2px 5px rgba(56,139,232, 0.15);
-      min-width: 150px;
-      text-align: center;
-    }
-    .contact-info {
-      background: #388be8;
-      color: white;
-      padding: 1rem;
-      border-radius: 8px;
-      font-weight: 600;
-      text-align: center;
-      letter-spacing: 0.05em;
-      font-size: 1.1rem;
-      box-shadow: 0 4px 12px rgba(56,139,232,0.16);
-    }
-    .contact-info a {
-      color: #d2edff;
-      font-weight: 700;
-    }
-    .contact-info a:hover {
-      color: white;
-    }
-    @media (max-width: 600px) {
-      .container {
-        padding: 1.5rem 1rem;
-        margin: 1.5rem 1rem;
-      }
-      nav {
-        font-size: 1.05rem;
-        flex-direction: column;
-        align-items: center;
-      }
-      nav a {
-        margin: 8px 0;
-      }
-      ul.skills, ul.projects {
-        flex-direction: column;
-      }
-      ul.skills li, ul.projects li {
-        min-width: auto;
-        margin-right: 0;
-      }
-      nav a.active::after, nav a:hover::after {
-        width: 70px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>K Raj Bharath — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="header-bar"></div>
-  <div class="container">
-    <header>
-      <h1>K Raj Bharath</h1>
-      <div>Curious learner and aspiring developer, SRM University</div>
-    </header>
+  <!-- Navbar -->
+  <header>
     <nav>
-      <a href="#about" class="active">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <h1 class="logo">K Raj Bharath</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I’m K Raj Bharath, currently a first-year student studying Computer Science & Engineering at SRM University. I’m new to coding but excited about building real projects and growing my skills. This portfolio is my first step in sharing what I’ve created and learning more as I go!</p>
-    </section>
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills">
-        <li>Basic HTML & CSS</li>
-        <li>Eager to learn JavaScript</li>
-        <li>Version control with Git & GitHub</li>
-      </ul>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul class="projects">
-        <li>Personal Portfolio Website (This project)</li>
-      </ul>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact-info">
-        Email: <a href="mailto:raj20063251@gmail.com">raj20063251@gmail.com</a><br/>
-        GitHub: <a href="https://github.com/Raj-git01" target="_blank" rel="noopener">github.com/Raj-git01</a><br/>
-        LinkedIn: <a href="https://www.linkedin.com/in/raj3251" target="_blank" rel="noopener">linkedin.com/in/raj3251</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Hi, I'm K Raj Bharath 👋</h2>
+    <p>Aspiring Web Developer | B.Tech CSE Student</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a first-year B.Tech CSE student passionate about coding, web development,
+      and problem-solving. I enjoy building projects and learning new technologies.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">C</div>
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio using HTML, CSS, JS.</p>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 K Raj Bharath | Built with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
